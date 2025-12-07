@@ -5,23 +5,30 @@
 ### Transfer Learning:
 1. Rete pre trained: ResNet / VGG16
 2. Freeze layer finali
-3. Data Augmentation del dataset
-4. Diamo il dataset e salviamo i vettori di output (embeddings)
-5. Addestramento dei seguenti classificatori:
+3. Data Pipeline:
+   - Resize Immagini
+   - Preprocessing.
+4. Estrazione delle Features(lavorare in batch):
+   - Feed-forward
+   - Flattening
+   - Salvataggio label
+6. Addestramento dei seguenti classificatori
+   Prima fare PCA, poi allenare modelli:
    - SVM
    - Random Forest
    - KNN
    - MLP
    - Regressore Lineare
 
-6. Metriche:
+7. Inferenza e Valutazione
+8. Metriche:
    - Accuracy
    - F1-score
    - Inference time
    - model size
    - Robustezza
   
-7. Creazione dataset esterno:
+9. Creazione dataset esterno:
    - Acquisizone foto
    - Etichettatura tramite ROBOFLOW
    - Passare dati al modello e fare inferenza.
