@@ -3,7 +3,7 @@
 
 # 💻 Pipeline
 ### Transfer Learning:
-1. Rete pre trained: ResNet / VGG16
+1. Rete pre trained: ResNet 50 / VGG16
 2. Freeze layer finali
 3. Data Pipeline:
    - Resize Immagini: Ridimensionare le immagini GTSRB (anche se sono 32x32) a 224x224 (o alla dimensione di input richiesta dalla rete scelta).
