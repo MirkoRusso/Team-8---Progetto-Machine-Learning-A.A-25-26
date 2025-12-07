@@ -9,6 +9,7 @@
 4. Diamo il dataset e salviamo i vettori di output (embeddings)
 5. Addestramento dei seguenti classificatori:
    - SVM
+   - Random Forest
    - KNN
    - MLP
    - Regressore Lineare
