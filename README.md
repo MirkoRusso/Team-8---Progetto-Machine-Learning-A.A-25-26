@@ -7,16 +7,18 @@
    4. creare file .env ed aggiungere API KEY di Kaggle. Per ottenerla devi loggare su Kaggle cliccare sull'icona del profilo in alto a destra, poi andare in "settings", scrollare fino ad API Tokens e generarlo.
    5. Incollare il token nel file .env
    6. scaricare il dataset: eseguire dalla root del progetto il comando: ```python utils/dataset_download.py```, il dataset verrà scaricato nella cartella ```data/german-traffic-sign```
+   7. I file con le features sono molto pesanti e github non li accetta. ve li passo a parte, vanno inseriti nella ```data/features```
    7. Ora puoi trainare i modelli: creali nella cartella ```classifiers```
    8. ENJOY LITTLE MOTHERFUCKER
 
-## Versione di python: 3.13.7
-## ‼️IMPORTANTE - Sono state estratte le features nei seguenti file: ```data/features/features_test.npz``` e ```data/features/features_train.npz``` 
+### Versione di python da installare: 3.13.7
+## ‼️IMPORTANTE 
+Sono state estratte le features nei seguenti file: ```data/features/features_test.npz``` e ```data/features/features_train.npz``` 
 Le classi estratte sono ordinate e solo in formato numerico, è stato aggiunto il file ``` utils/gtsrb_classes.py``` che contiene il dizionario con le classi in formato testuale.
 Quindi questo prevede che deve essere importato il dizionario quando si vogliono leggere le classi testuali. All'interno del file è presente anche un esempio per la conversione
 In ```classifiers/esempio.py``` è presente un altro esempio con l'import del modulo con il dizionario.
 
-## ‼️IMPORTANTE - FARE LO SHUFFLE DELLE FEATURES QUANDO SI TRAINANO I MODELLI
+### ‼️IMPORTANTE - FARE LO SHUFFLE DELLE FEATURES QUANDO SI TRAINANO I MODELLI
 
 # 💻 Pipeline
 ### Transfer Learning:
