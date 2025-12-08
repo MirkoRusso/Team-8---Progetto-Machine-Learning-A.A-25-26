@@ -5,6 +5,7 @@
    2. creare virtual environment con python 3.13 ```python3.13 -m venv venv```
    3. installare dipendenze e librerie con requirements.txt ```pip install -r requirements.txt```
    4. creare file .env ed aggiungere API KEY di Kaggle. Per ottenerla devi loggare su Kaggle cliccare sull'icona del profilo in alto a destra, poi andare in "settings", scrollare fino ad API Tokens e generarlo.
+   5. creare cartella ```data```e all'interno creare cartella```features```.
    5. Incollare il token nel file .env
    6. scaricare il dataset: eseguire dalla root del progetto il comando: ```python utils/dataset_download.py```, il dataset verrà scaricato nella cartella ```data/german-traffic-sign```
    7. I file con le features sono molto pesanti e github non li accetta. ve li passo a parte, vanno inseriti nella ```data/features```

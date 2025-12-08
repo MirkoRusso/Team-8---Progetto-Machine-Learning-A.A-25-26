@@ -1,5 +1,4 @@
 .env
 venv
 data/german-traffic-sign
-
 data/features
